@@ -1,0 +1,21 @@
+<p style="width: 900px;" mat-dialog-title>商品修改</p>
+<p style="margin-left: 20px;">{{ this.data.id }}</p>
+
+<mat-form-field style="margin-left: 20px;margin-top: 10px;margin-right: 20px">
+  <input matInput placeholder="请输入position" [(ngModel)]="dialogData.position">
+</mat-form-field>
+<mat-form-field style="margin-left: 20px;margin-right: 20px">
+  <input matInput placeholder="请输入name" [(ngModel)]="dialogData.name">
+</mat-form-field>
+<mat-form-field style="margin-left: 20px;margin-right: 20px">
+  <input matInput placeholder="请输入icon" [(ngModel)]="dialogData.icon">
+</mat-form-field>
+<mat-form-field style="margin-left: 20px;margin-right: 20px">
+  <input matInput placeholder="请输入phone" [(ngModel)]="dialogData.phone">
+</mat-form-field>
+<mat-form-field style="margin-left: 20px;margin-right: 20px">
+  <input matInput placeholder="请输入address" [(ngModel)]="dialogData.address">
+</mat-form-field>
+
+
+<button  style="margin-left:20px;background: red;color: white;margin-bottom: 10px;width: 120px;" mat-flat-button [mat-dialog-close]="this.dialogData" color="primary">确认</button>
